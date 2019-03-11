@@ -1,0 +1,39 @@
+/* Start nav */
+
+.bg-light {
+    background-color: #fff !important;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+@extend %shadow;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding-left: 50px;
+    font-size: $font20;
+    color: $color2;
+    font-weight: 600;
+    &:hover{
+        color:$color1;
+    }
+    
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color:$color1;
+}
+.nav-link {
+    img{
+        margin-left: 10px;
+    }
+}
+.active-login{
+    background-color: $color5;
+}
+
+.dropdown-toggle::after {
+
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+

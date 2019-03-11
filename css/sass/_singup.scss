@@ -1,0 +1,92 @@
+.signup{
+    .signup-space{
+        background: url(../Images/LogupBg.jpg) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .signup-itms{
+        background: url(../Images/Bg.png) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        padding-top: 15%;
+        min-height: 100vh;
+        h2{
+            font-size: $font45;
+            font-weight: normal;
+        }
+        p{
+            font-size: $font18;
+           span{
+               display: block;
+           }
+        }
+    }
+    .input-style{
+        position: relative;
+        margin-bottom: 15px;
+        input{
+            background-color: #fff;
+            border: 1px solid $color1;
+            border-radius: $br;
+            text-indent: 30px;
+            height: 35px;
+        }
+        .email,
+        .pass{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 0;
+        }
+        .show{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 0;
+            cursor: pointer;
+        }
+    }
+}
+.remb{
+    margin-bottom: 30px;
+    font-size: $font14;
+    input{
+       margin-left: 10px;
+    }
+    img{
+        margin-left: 10px;
+    }
+    a{
+        color: $color1;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.div-btn{
+    .btn{
+        background-color: $color5;
+        color: $color1;
+        font-weight: bold;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.sign{
+    margin-top: 30px;
+    p{
+        color: $color1;
+        font-size: $font14;
+        &:last-of-type{
+            padding-top: 10px;
+        }
+        a{
+            color: $color5;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+

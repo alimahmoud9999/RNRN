@@ -1,0 +1,93 @@
+.Additem {
+    padding-top: 70px;
+    background-color: #fff;
+    min-height: 100vh;
+    .uplode {
+        background-color: rgba(0, 0, 0, .11);
+        padding: 78px 0 78px 0;
+        .file-upload {
+            position: relative;
+            display: inline-block;
+        }
+        .file-upload__label {
+            display: block;
+            background: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .file-upload__input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 1;
+            width: 0;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+    p {
+        margin-top: 15px;
+        color: $color-pro1;
+        font-size: $font14;
+    }
+    form {
+        .input-style {
+            position: relative;
+            img {
+                position: absolute;
+                top: 8px;
+                left: 10px;
+                bottom: 0;
+            }
+        }
+        input,
+        textarea,
+        select,
+        button {
+            margin-bottom: 15px;
+        }
+        input,
+        textarea,
+        select {
+            background-color: #fff;
+            border: 1px solid $color1;
+            border-radius: $br;
+        }
+        input[type=text],
+        select {
+            height: 40px;
+            text-indent: 20px;
+        }
+        textarea {
+            resize: none;
+            height: 130px;
+            text-indent: 20px;
+        }
+        .div-rido {
+            border: 1px solid $color1;
+            margin-bottom: 15px;
+            padding: 10px 15px 10px 0;
+            border-radius: $br;
+            input {
+                margin-bottom: 0;
+            }
+            span {
+                margin-right: 10px;
+                color: $color2;
+                font-size: $font14;
+            }
+        }
+        .btn {
+            font-size: $font18;
+            color: $color1;
+        }
+        .btn-share {
+            background-color: $color3;
+        }
+        .btn-cancel {
+            background-color: $color2;
+        }
+    }
+}

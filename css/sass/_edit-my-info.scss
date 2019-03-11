@@ -1,0 +1,404 @@
+.edimt-my-info {
+    position: relative;
+
+    .my-tabs {
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+
+        img {
+            // margin-left: 5px;
+            // margin-right: 30px
+        }
+        .tab1,
+        .tab2,
+        .tab3,
+        .tab4,
+        .tab5{
+            margin-left: 5px;
+            min-height: 56px;
+            line-height: 56px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tab1 {
+            background-color: #BDCDE3;
+            border: 1px solid #295EA4;
+            border-radius: $br;
+        }
+
+        .tab2 {
+            background-color: #FBE7BC;
+            border: 1px solid #F5B224;
+            border-radius: $br;
+        }
+
+        .tab3 {
+            background-color: #FDCCCC;
+            border: 1px solid #F86F6F;
+            border-radius: $br;
+        }
+
+        .tab4 {
+            background-color: #B1EBD3;
+            border: 1px solid #00BE70;
+            border-radius: $br;
+        }
+
+        .tab5 {
+            background-color: #6F5B92;
+            border: 1px solid #58329B;
+            border-radius: $br;
+        }
+    }
+
+    .my-tabs2 {
+        margin-top: 20px;
+        min-height: 100vh;
+        margin-bottom: 50px;
+
+        &:not(:first-of-type) {
+            display: none;
+        }
+        
+        .notification{
+            
+            padding-top: 10px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $color2;
+            &:hover{
+                        @extend %trans;
+                .div-btn{
+                    display: block;
+                }
+                @extend %trans;
+            }
+            img{
+                margin-top: 5px;
+            }
+            p{
+                margin-top: 5px;
+                margin-bottom: 0px;
+                color: $color2;
+                strong{
+                    color: $color1;
+                }
+            }
+            .div-btn{
+                display: none;
+                @extend %trans;
+                .btn{
+                    background-color: #fff;
+                    border-radius: $br;
+                    box-shadow: 0px 1px 5px rgba(0, 0, 0, .16);
+                    @extend %trans;
+                    &:active{
+                        box-shadow: 0px 1px 5px rgba(0, 0, 0, .0); 
+                    }
+                    &:first-of-type{
+                        color:#00BE70;
+                    }
+                    &:nth-child(2){
+                        color:#F86F6F;
+                    }
+                    &:last-of-type{
+                        color:$color2;
+                    }
+                }
+            }
+        }
+        @extend .sec2;
+        @extend .sec3;
+    }
+
+    .uplode {
+        @extend %shadow;
+        padding: 78px 0 78px 0;
+
+        .file-upload {
+            position: relative;
+            display: inline-block;
+        }
+
+        .file-upload__label {
+            display: block;
+            background: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .file-upload__input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 1;
+            width: 0;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    .up {
+        color: #AEA3C2;
+        font-size: $font14;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    form {
+        h2 {
+            color: #AEA3C2;
+            font-size: $font14;
+            margin-bottom: 15px;
+        }
+
+        div {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        input,
+        select {
+            height: 40px;
+            border: 1px solid $color1;
+            border-radius: $br;
+            text-indent: 30px;
+            background-color: #fff;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+            text-align: right;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            top: 8px;
+            right: 5px;
+        }
+    }
+
+    button {
+        height: 41px;
+        border: none;
+
+        &:first-of-type {
+            background-color: $color3;
+        }
+    }
+
+    .my-massge {
+        position: relative;
+        border: 1px solid $color2;
+        height: 100vh;
+        padding-top: 70px;
+        overflow: hidden;
+        overflow: scroll;
+
+        .input-pos {
+            position: absolute;
+            right: 10px;
+            top: 17px;
+        }
+
+        .img-pos {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .message-res {
+            background-color: #fff;
+            position: relative;
+            padding-top: 15px;
+            padding-right: 4px;
+            cursor: pointer;
+
+            input {
+                margin-top: 15px;
+            }
+
+            h5 {
+                font-size: $font14;
+            }
+
+            p {
+                font-size: $font14;
+            }
+
+            .date {
+                position: absolute;
+                left: 15px;
+                font-size: 11px;
+            }
+
+            &:first-of-type {
+                margin-top: 70px;
+            }
+        }
+
+        .active {
+            background-color: #F5B224
+        }
+    }
+
+    .chat {
+        height: 100vh;
+        overflow: scroll;
+        position: relative;
+
+        .head-chat {
+            margin-top: 1px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, .16);
+            padding: 15px 10px;
+
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            p {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+
+        .send-massge {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+
+            input {
+                background-color: #fff;
+                border: 1px solid $color1;
+                height: 40px;
+                border-radius: $br;
+            }
+
+            img {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                cursor: pointer;
+            }
+        }
+
+        .massge-sent {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 52px;
+
+            p {
+                width: 70%;
+                padding: 15px;
+                display: inline-block;
+                background-color: #FCFBF4;
+                font-size: $font16;
+                color: $color1;
+            }
+
+            span {
+                display: inline-block;
+                font-size: $font14;
+                color: $color2;
+            }
+        }
+
+        .massge-res {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 52px;
+        }
+
+        p {
+            width: 70%;
+            padding: 15px;
+            display: inline-block;
+            font-size: $font16;
+            color: $color1;
+        }
+
+        span {
+            display: inline-block;
+            font-size: $font14;
+            color: $color2;
+        }
+    }
+
+    .add-mazad {
+        @extend %shadow2;
+        height: 417px;
+        padding-top: 152px;
+        display: block;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: $font21;
+            color: $color1;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+    }
+
+    .dropdown-toggle {
+        margin-top: 0;
+    }
+
+    .box-opcity2 {
+        background-color: rgba(0, 0, 0, .16);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9999999999999;
+        display: none;
+
+        .confirm-delete {
+            background-color: #fff;
+            width: 548px;
+            height: 392px;
+            margin-top: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            padding: 50px;
+            @extend %shadow;
+            z-index: 1;
+
+            img {
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: $font24;
+                color: $color1;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .btn {
+                margin-bottom: 15px;
+                background-color: #fff;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, .21);
+            }
+
+            .btn-delete {
+                background-color: #F86F6F;
+            }
+        }
+    }
+}

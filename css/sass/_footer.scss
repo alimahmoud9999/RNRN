@@ -1,0 +1,56 @@
+@import 'component';
+.footer{
+    padding-top: 20px;
+    min-height: 182px;
+    .logo-socil{
+        ul{
+            margin-top: 20px;
+            padding: 0;
+            li{
+                display: inline-block;
+            }
+        }
+    }
+    .footer-item1,
+    .footer-item2,
+    .footer-item3{
+        ul {
+            padding: 0;
+            li{
+                a{
+                    margin: 6px 0 6px 0;
+                    display: block;
+                    color: $color2;
+                    font-size: $font14;
+                    @extend %trans;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color1;
+                    }
+                    span{
+                        color: $color1;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .footer-item4{
+        h2{
+            font-size: $font22;
+            color: $color1;
+            padding: 10px 0 10px 0;
+        }
+    }
+    .lodex{
+        background-color: #fff;
+        margin-top: 20px;
+        p{
+            padding: 0;
+            margin: 0;
+            font-size: $font14;
+            color: $color1;
+        }
+  
+    }
+}

@@ -1,0 +1,377 @@
+/*
+Theme Name : RNRN 
+Theme Coder : Ali Mahmoud
+Strat Date : 1/8/2018
+*/
+
+// Import Fils SCss 
+@import 'sass/vars';
+@import 'sass/component';
+/* Import font */
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf') format('truetype'),
+     url('../fonts/Cairo-Bold.ttf') format('truetype'), 
+     url('../fonts/Cairo-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'Cairo2';
+//     src: url('../fonts/Cairo-Bold.ttf') format('truetype');
+//     font-weight: bold;
+//     font-style: bold;
+// }
+html,
+body {
+    direction: rtl;
+    font-family: Cairo;
+    background-color: #FAFAFA;
+}
+
+// Start nave 
+@import 'sass/nav';
+/*Start Sec1 */
+
+.sec1 {
+    padding-top: 20px;
+    .box-sec1 {
+        height: 55px;
+        background-color: #fff;
+        border: 2px solid $color2;
+        cursor: pointer;
+        border-radius: $br;
+        padding-right: 15px;
+        margin-bottom: 15px;
+        img {
+            display: inline-block;
+        }
+        p {
+            display: inline-block;
+            color: $color1;
+            padding-right: 15px;
+            font-size: $font19;
+            line-height: 55px;
+            font-weight: bold;
+        }
+    }
+    .active {
+        border: 2px solid $color1;
+    }
+}
+
+/*End Sec1 */
+
+/*Start Sec2*/
+
+.sec2 {
+    padding-top: 45px;
+    background-color: #fff;
+    .box-head {
+        @extend %box-head;
+    }
+    .box-type1 {
+        &:not(:first-of-type) {
+            margin-top: 15px;
+        }
+        .box-input {
+            margin-top: 18px;
+            .box-input2 {
+                margin-top: 7px;
+                input {
+                    background-color: #fff;
+                }
+                span {
+                    color: $color2;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .box-progress {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 129px;
+        background-color: $color4;
+        overflow: hidden;
+        padding-top: 15px;
+        border-radius: $br;
+        @extend %shadow;
+        text-align: center;
+        h4 {
+            font-size: $font16;
+            margin-bottom: 30px;
+            margin-right: 15px;
+        }
+        .ui-widget.ui-widget-content {
+            height: 5px;
+            background-color: $color2;
+            border: $color2;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default,
+        .ui-button,
+        html .ui-button.ui-state-disabled:hover,
+        html .ui-button.ui-state-disabled:active {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: #fff;
+            border: 2px solid $color3;
+        }
+        .ui-widget-header {
+            background-color: $color3;
+            border: $color3;
+        }
+        .box-price {
+            margin-top: 20px;
+            input {
+                width: 90px;
+                text-align: center;
+                background-color: transparent;
+                border: 1px solid $color2;
+                border-radius: $br;
+            }
+        }
+    }
+    .box-finsh {
+        background-color: $color1;
+        height: 40px;
+        margin-top: 15px;
+        border-radius: $br;
+        p {
+            color: #fff;
+            line-height: 40px;
+            font-size: $font19;
+        }
+    }
+    .db-btn {
+        margin-top: 15px;
+        @extend %db-btn;
+    }
+    .crus-finsh {
+        margin-top: 20px;
+        // margin-bottom: 20px;
+        // min-height: 200px;
+        text-align: center;
+        .box-news {
+            img {
+                width: 168px;
+                height: 94px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            h4 {
+                font-size: $font16;
+                color: $color2;
+                margin-top: 5px;
+            }
+            .box-new-timer {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                span {
+                    font-size: $font16;
+                    color: $color-pro1;
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+            }
+            .price {
+                margin-bottom: 20px;
+                h2 {
+                    font-size: 30px;
+                    color: $color3;
+                }
+                span {
+                    font-size: $font16;
+                    color: $color2;
+                }
+            }
+        }
+    }
+    .owl-carousel {
+        .owl-stage-outer {
+            direction: ltr;
+        }
+    }
+    .adv{
+        background-color: #9CC0F1;
+        height: 450px;
+       
+        margin-bottom: 34px;
+     img{
+         height: 100%;
+     }
+    }
+}
+
+/*End Sec2*/
+
+/*Start Sec3 */
+
+.sec3 {
+    .form-sort {
+        .input-serch {
+            
+            position: relative;
+            input {
+                background-color: #fff;
+                border: 1px solid $color2;
+                border-radius: $br;
+                height: 40px;
+                text-indent: 20px;
+            }
+            i {
+                position: absolute;
+                top: 10px;
+                bottom: 0;
+                left: 15px;
+                color: $color2;
+            }
+        }
+    
+        .my-dropdown {
+            @extend %db-btn;
+        }
+        .dropdown-toggle {
+            margin-top: 0;
+        }
+    }
+    .prodect {
+        @extend %prodect;
+     
+       
+    }
+}
+.input-serch1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    input {
+        background-color: #fff;
+        border: 1px solid $color2;
+        border-radius: $br;
+        height: 40px;
+        text-indent: 20px;
+    }
+    i {
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        left: 15px;
+        color: $color2;
+    }
+}
+.form-sort {
+    .my-dropdown {
+        @extend %db-btn;
+    }
+    .dropdown-toggle {
+        margin-top: 0;
+    }
+}
+
+.sub{
+    min-height: 120px;
+    background-color: $color5;
+    margin-bottom: 30px;
+    
+    p{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-size: $font24;
+        text-align: center;
+    }
+    .form-sub{
+     padding-top: 40px;
+     padding-bottom: 40px;
+     input{
+        border-radius: 4px;
+        border: 1px solid #eee;
+        height: 40px;
+        text-indent: 20px;
+        margin-bottom: 15px;
+     }
+     .btn{
+         background-color: $color6;
+         color: #fff;
+         font-size: $font16;
+     }
+    }
+ 
+}
+
+/*End Sec3*/
+
+/*Start Page Login*/
+
+@import 'sass/login';
+/*End Page login*/
+
+/*Start remember password*/
+
+@import 'sass/rememberpassword';
+/*End Password*/
+
+/*Start Sign up */
+
+@import 'sass/singup';
+/*Endd sign up*/
+
+/*Start Add Item */
+
+@import 'sass/additem';
+/*End item */
+
+/*Start porfile */
+
+@import 'sass/porfile';
+/*End porfile*/
+
+/*Start Edit My info*/
+
+@import 'sass/edit-my-info';
+/*End Edit My info */
+
+/* Start itemDetails */
+@import 'sass/itemDetails';
+/*End itemDetails */
+
+/*Start 404 */
+@import 'sass/404';
+/*End 404*/
+
+/*Start Footer*/
+@import 'sass/footer';
+/*End Footer */
+
+/*Edit Scrollbar*/
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color5;
+} 
+
+
+

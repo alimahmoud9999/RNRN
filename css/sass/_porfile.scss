@@ -1,0 +1,154 @@
+.porfile{
+    background-color:#eee;
+    padding-bottom: 30px;
+    border-radius: $br;
+    .porfile-pic{
+        img{
+            margin-top: 30px;
+            border-radius: 50%;
+            @extend %shadow2;
+        }
+    }
+    .profile-info{
+        h3{
+            color: $color1;
+            font-size: $font20;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        h4{
+            color: $color2;
+            font-size: $font20;
+            margin-bottom: 15px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
+            li{
+                display: inline-block;
+                i{
+                    color: $color2;
+                }
+                .active{
+                    color: $color3;
+                }
+            }
+        }
+        p{
+            font-size: $font18;
+            color: $color1;
+            padding: 20px;
+        
+        }
+    }
+ 
+}
+a{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #AEA3C2;
+
+    &:hover{
+        color: #AEA3C2;
+    }
+}
+.btn-add-itime{
+    color: $color3;
+    background-color: #fff;
+    border: 1px solid $color2;
+    float:left;
+    &:hover{
+        text-decoration: none;
+        color: $color3;
+    }
+}
+.btn-user-massge{
+    color: $color3;
+}
+.btn-user-rate{
+    color: #6F5B92;
+}
+.btn-user-massge,
+.btn-user-rate{
+    background-color: #fff;
+    border: 1px solid $color2;
+    margin-right: 15px;
+    font-size: $font16;
+}
+
+.rate{
+    background-color: rgba(0, 0,0,.16);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    .box-rate{
+        height: 322px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        padding: 50px;
+        i{
+            color:$color3;
+            margin-bottom: 61px;
+        }
+        .btn{
+            margin-bottom: 15px;
+            color: $color1;
+        }
+        .btn-rate{
+            background-color: $color3;
+        }
+    }
+}
+.box-masseg{
+    background-color: rgba(0, 0,0,.16);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    .box-masseg2{
+        min-height: 322px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        padding: 50px;
+        .user-info{
+            background-color: $color1;
+            color: #fff;
+            padding: 15px;
+            p{
+                margin-bottom: 0;
+            }
+            i{
+                color: $color3;
+            }
+        }
+    }
+    textarea{
+        margin-top:15px;
+        margin-bottom: 15px;
+        resize: none;
+        height: 92px;
+    }
+    .btn{
+        margin-bottom: 15px;
+        color: $color1;
+    }
+    .send-ms{
+        background-color: $color3;
+    }
+}
